@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class SqAreaTest {
 
     @Test
-    public void WhenP6K2Then2() {
+    public void whenP6K2Then2() {
         int p = 6;
         double k = 2;
         double expected = 2;
@@ -16,7 +16,7 @@ public class SqAreaTest {
         Assert.assertEquals(out, expected, 0.01);
     }
     @Test
-    public void WhenP8K3Then3() {
+    public void whenP8K3Then3() {
         int p = 8;
         double k = 3;
         double expected = 3;
@@ -24,7 +24,7 @@ public class SqAreaTest {
         Assert.assertEquals(out, expected, 0.01);
     }
     @Test
-    public void WhenP9K2Then4Dot5() {
+    public void whenP9K2Then4Dot5() {
         int p = 9;
         double k = 2;
         double expected = 4.5;
