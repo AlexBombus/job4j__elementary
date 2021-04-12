@@ -24,7 +24,7 @@ public class SqAreaTest {
         Assert.assertEquals(out, expected, 0.01);
     }
     @Test
-    public void WhenP9K2Then4_5() {
+    public void WhenP9K2Then4Dot5() {
         int p = 9;
         double k = 2;
         double expected = 4.5;
