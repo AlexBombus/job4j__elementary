@@ -19,13 +19,13 @@ public class SwitchArray {
     public static void main(String[] args) {
         int[] nums = new int[] {1, 2, 3, 4, 5, 6};
         int[] rsl = swapBorder(nums);
-        for (int index = 0; index < rsl.length; index++) {
-            System.out.print(rsl[index]);
+        for (int i : rsl) {
+            System.out.print(i);
         }
-        System.out.println("");
+        System.out.println();
         int[] swapedRsl = swap(rsl, 1, 4);
-        for (int i = 0; i < swapedRsl.length; i++) {
-            System.out.print(swapedRsl[i]);
+        for (int j : swapedRsl) {
+            System.out.print(j);
         }
     }
 }
