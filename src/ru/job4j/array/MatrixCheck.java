@@ -22,4 +22,12 @@ public class MatrixCheck {
         }               // метод проверяет что в каждой строке двухмерного массива
         return result; // ячейка с индексом column заполнена символом 'X'.
     }
+
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
+        }
+        return rsl; //метод заполнить одномерный массив элементами диагонали из двухмерного массива
+    }
 }
