@@ -28,6 +28,17 @@ public class MatrixCheck {
         for (int i = 0; i < board.length; i++) {
             rsl[i] = board[i][i];
         }
-        return rsl; //метод заполнить одномерный массив элементами диагонали из двухмерного массива
+        return rsl; //метод заполняет одномерный массив элементами диагонали из двухмерного массива
+    }
+
+    public static boolean isWin(char[][] board) {
+        int index = 0;
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][i] == 'X') {
+                index = i;
+                break;
+            }
+        }
+        return monoHorizontal(board, index) || monoVertical(board, index);
     }
 }
