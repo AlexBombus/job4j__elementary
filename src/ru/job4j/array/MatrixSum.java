@@ -8,6 +8,6 @@ public class MatrixSum {
                 rsl += array[row][cell];
             }
         }
-        return rsl;
+        return rsl; // метод суммирует все элементы двухмерного массива
     }
 }
