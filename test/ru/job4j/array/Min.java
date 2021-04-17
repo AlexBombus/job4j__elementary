@@ -8,6 +8,6 @@ public class Min {
                 min = num;
             }
         }
-        return min;
+        return min; // метод находит и возвращает минимальное число в массиве
     }
 }

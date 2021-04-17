@@ -8,6 +8,6 @@ public class MinDiapason {
                 min = array[i];
             }
         }
-        return min;
+        return min; // метод находит и возвращает минимальное значение в заданном диапазоне массива
     }
 }

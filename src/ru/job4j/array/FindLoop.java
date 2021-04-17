@@ -9,7 +9,7 @@ public class FindLoop {
                 break;
             }
         }
-        return rst;
+        return rst; // находит и возвращает индекс массива в котором находитмя мин значение
     }
 
     public static int indexOf(int[] data, int el, int start, int finish) {
@@ -20,6 +20,6 @@ public class FindLoop {
                 break;
             }
         }
-        return rst;
+        return rst; // находит и возвращает индекс массива в котором находитмя мин значение в заданном диапазоне
     }
 }
