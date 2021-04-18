@@ -32,13 +32,13 @@ public class MatrixCheck {
     }
 
     public static boolean isWin(char[][] board) {
-        int index = 0;
+        boolean result = false;
         for (int i = 0; i < board.length; i++) {
-            if (board[i][i] == 'X') {
-                index = i;
+            if (board[i][i] == 'X' && (monoHorizontal(board, i) || monoVertical(board, i))) {
+                result = true;
                 break;
             }
         }
-        return monoHorizontal(board, index) || monoVertical(board, index);
+        return result; // метод проверяет наличие горизонт. или верт. строки полностью заполненной 'Х'
     }
 }
