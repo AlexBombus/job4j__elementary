@@ -1,6 +1,9 @@
 package ru.job4j.array;
 
-public class Defragment { // перемещаем заполненные ячейки массива в начало, а пустые в конец.
+/**
+ *  Метод перемещает заполненные ячейки массива в начало, а пустые в конец.
+ */
+public class Defragment {
     public static String[] compress(String[] array) {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
@@ -21,8 +24,8 @@ public class Defragment { // перемещаем заполненные яче�
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
         String[] compressed = compress(input);
         System.out.println();
-        for (int index = 0; index < compressed.length; index++) {
-            System.out.print(compressed[index] + " ");
+        for (String s : compressed) {
+            System.out.print(s + " ");
         }
     }
 }
