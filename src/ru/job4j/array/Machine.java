@@ -17,13 +17,13 @@ public class Machine {
         int[] rsl = new int[100]; // это массив, с перечнем монет сдачи
         int size = 0; // размер массива сдачи - колличество монет сдачи
         int moneyBack = money - price; // расчет сдачи
-        for (int i = 0; i < coins.length; i++) {
-            while (moneyBack >= coins[i]) {
-                moneyBack -= coins[i];
-                rsl[size] = coins[i];
+        for (int coin : coins) {
+            while (moneyBack >= coin) {
+                moneyBack -= coin;
+                rsl[size] = coin;
                 size++;
-                }
             }
+        }
         return Arrays.copyOf(rsl, size);
     }
 }
