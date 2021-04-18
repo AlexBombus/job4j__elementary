@@ -1,6 +1,9 @@
 package ru.job4j.array;
 
 public class Matrix {
+    /**
+     *  метод заполняет двумерный массив значениями наподобие таблицы умножения
+     */
     public static int[][] multiple(int size) {
         int[][] array = new int[size][size];
         for (int i = 0; i < array.length; i++) {
@@ -8,6 +11,6 @@ public class Matrix {
                 array[i][j] = (i + 1) * (j + 1);
             }
         }
-        return array; // метод заполняет двумерный массив значениями наподобие таблицы умножения
+        return array;
     }
 }
