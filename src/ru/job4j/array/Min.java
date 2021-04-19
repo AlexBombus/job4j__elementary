@@ -1,5 +1,8 @@
 package ru.job4j.array;
 
+/**
+ * метод находит и возвращает минимальное число в массиве
+ */
 public class Min {
     public static int findMin(int[] array) {
         int min = array[0];
@@ -8,6 +11,6 @@ public class Min {
                 min = array[i];
             }
         }
-        return min; // метод находит и возвращает минимальное число в массиве
+        return min;
     }
 }

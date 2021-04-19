@@ -1,5 +1,8 @@
 package ru.job4j.array;
 
+/**
+ * метод суммирует все элементы двухмерного массива
+ */
 public class MatrixSum {
     public static int sum(int[][] array) {
         int rsl = 0;
@@ -8,6 +11,6 @@ public class MatrixSum {
                 rsl += array[row][cell];
             }
         }
-        return rsl; // метод суммирует все элементы двухмерного массива
+        return rsl;
     }
 }

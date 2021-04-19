@@ -1,5 +1,8 @@
 package ru.job4j.array;
 
+/**
+ * метод находит и возвращает минимальное значение в заданном диапазоне массива
+ */
 public class MinDiapason {
     public static int findMin(int[] array, int start, int finish) {
         int min = array[start];
@@ -8,6 +11,6 @@ public class MinDiapason {
                 min = array[i];
             }
         }
-        return min; // метод находит и возвращает минимальное значение в заданном диапазоне массива
+        return min;
     }
 }
