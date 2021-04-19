@@ -1,5 +1,8 @@
 package ru.job4j.array;
 
+/**
+ * метод меняет все отрицательные значения в двумерном массиве на ноль
+ */
 public class SkipNegative {
     public static int[][] skip(int[][] array) {
         for (int row = 0; row < array.length; row++) {
@@ -9,6 +12,6 @@ public class SkipNegative {
                 }
             }
         }
-        return array; // метод меняет все отрицательные значения в двумерном массиве на ноль
+        return array;
     }
 }
