@@ -11,22 +11,22 @@ package ru.job4j.calculator;
  */
 
 public class Calculator {
-    private static final int x = 5;
+    private static final int X = 5;
 
     private static int sum(int a) {
-        return x + a;
+        return X + a;
     }
 
     private static int minus(int a) {
-        return a - x;
+        return a - X;
     }
 
     private int multiply(int a) {
-        return x * a;
+        return X * a;
     }
 
     private double divide(int a) {
-        return  (double) a / x;
+        return  (double) a / X;
     }
 
     private double sumAllOperation(int a) {
@@ -34,7 +34,7 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        Calculator calc= new Calculator();
+        Calculator calc = new Calculator();
         int four = 4;
         System.out.println(sum(four));
         System.out.println(minus(four));
