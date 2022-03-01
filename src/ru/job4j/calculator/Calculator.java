@@ -1,18 +1,64 @@
 package ru.job4j.calculator;
 
+/**
+ * 1.9. Статические и не статические методы
+ * Смотрим разницу в применении статических и нестатических методов.
+ * Статические методы принадлежат классу, а не объекту, соответственно вызывать можем их без создания
+ * экземпляра класса, в котором они находятся. Важно помнить, что из статического метода можно получить
+ * доступ только к статическим переменным или вызывать другие статические методы. Нестатические методы имеют
+ * доступ к статическим переменным в классе и поэтому в нестатическом методе их можно использовать.
+ *
+ */
+
 public class Calculator {
+    private static final int x = 5;
+
+    private static int sum(int a) {
+        return x + a;
+    }
+
+    private static int minus(int a) {
+        return a - x;
+    }
+
+    private int multiply(int a) {
+        return x * a;
+    }
+
+    private double divide(int a) {
+        return  (double) a / x;
+    }
+
+    private double sumAllOperation(int a) {
+        return sum(a) + minus(a) + multiply(a) + divide(a);
+    }
+
     public static void main(String[] args) {
-        int one = 1;
-        int two = 2;
+        Calculator calc= new Calculator();
         int four = 4;
-        int five = 5;
-        int six = 6;
-        int onePlusTwo = one + two;
-        int sixDivTwo = six / two;
-        int fiveMinusTwo = five - two;
-        int fourTimeTwo = four * two;
-        System.out.println(sixDivTwo);
-        System.out.println(fiveMinusTwo);
-        System.out.println(fourTimeTwo);
+        System.out.println(sum(four));
+        System.out.println(minus(four));
+        System.out.println(calc.multiply(four));
+        System.out.println(calc.divide(four));
+        System.out.println(calc.sumAllOperation(four));
+
     }
 }
+
+/*
+Когда же стоит использовать статические методы?
+1. Для доступа или управления статическими переменными и другими статическими методами, которые не
+ зависят от объектов;
+2. Для служебных, вспомогательных классов и интерфейсов, поскольку не требуют создания объекта и
+ соответственно, обеспечивают большую производительность;
+3. Когда методу требуется доступ лишь к статическим полям класса.
+
+Стоит подчеркнуть особенности статических методов:
+1. Статические методы нельзя переопределять;
+2. Статические методы не могут использовать ключевые слова this (ссылка на текущий объект) или
+ super (ссылка на объект суперкласса);
+3. Нестатические методы могут обращаться непосредственно как к методам класса, так и к переменным класса;
+4. Нестатические методы могут обращаться к статическим переменным и статическим методам;
+5. Статические методы могут обращаться ко всем статическим переменным и другим статическим методам.
+ Они не могут обращаться к переменным класса и нестатическим методам. Для этого им нужны ссылки на объект.
+ */
