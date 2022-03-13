@@ -13,7 +13,7 @@ public class Machine {
      *  int[] coins = {10, 5, 2, 1}; -  массив с типом имеющихся монет
      *  int[] rsl = new int[100];  это массив, с перечнем  номинала монет сдачи с заданным размером
      *  int size = 0; размер массива rsl - колличество монет сдачи,
-     * @return  // метод Arrays.copyOf() сокращает размер массива с изначального rls до размера  size
+     * @return выполнение метода Arrays.copyOf() сокращает размер массива с изначального rls до размера  size
      */
     public static int[] change(int money, int price) {
         int[] coins = {10, 5, 2, 1};
